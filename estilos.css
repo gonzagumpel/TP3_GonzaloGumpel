@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em; /* 16px */
+}
+
+body {
+    background-color: #f7f7f6; 
+    color: rgb(213, 211, 211);
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+color: #777;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.35em; /* 62px */
+    width: 40vw;
+    color: #333; /* Gris oscuro para resaltar más que un negro sólido */
+}
+
+h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.75em; /* 28px */
+    color: #333; /* Gris oscuro */
+}
+
+h5 {
+    font-weight: 500;
+    color: #333;
+    text-decoration-line: underline;
+    letter-spacing: 1px;
+}
+
+.columnas {
+    margin: 80px auto;
+    width: 60vw;
+    text-align: center;
+}
+
+.columnas p {
+    font-size: 0.85em; 
+    color: #777; /* Gris más suave para el texto secundario */
+}
+
+.custom-width {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.Galeria {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Galeria img {
+    margin-bottom: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: transform 0.3s ease; /* Efecto hover */
+}
+
+.Galeria img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente la escala de la imagen */
+}
+
+footer {
+    margin-top: 120px;
+    height: 20vh;
+    background-color: #333; /* Fondo oscuro con detalles urbanos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.25em;
+}
+
+@media(max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .columnas {
+        width: 90%;
+    }
+
+    .Galeria img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
